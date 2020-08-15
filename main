@@ -1,0 +1,249 @@
+#include <stdio.h>
+#include <locale>
+#include <string.h>
+
+int main() {
+
+	setlocale(LC_ALL, "portuguese");
+
+	int opcao, valor1, valor2, resultado;
+	float resultado1;
+
+	do
+	{
+		{
+			printf("==== Calculadora ====\n");
+			printf("\nEscolha a operação:\n");
+
+			printf("1- SOMA.\n");
+			printf("2- SUBTRAÇÃO.\n");		//MENU DE ESCOLHA DA OPERAÇÃO
+			printf("3- DIVISÃO.\n");
+			printf("4- MULTIPLICAÇÃO.\n");
+			printf("\n5- Encerrar.\n\n");
+
+			scanf_s("%i", &opcao);
+		}
+
+	} while (opcao < 1 || opcao > 5);	//LAÇO PARA FORÇAR O USUÁRIO A FICAR DENTRO DO MENU CASO DIGITE UM NÚMERO INVÁLIDO
+
+
+	switch (opcao)	//APÓS SELECIONADO A OPERAÇÃO O SWITCH CUIDARÁ DE REALIZAR AS INSTRUÇÕES CONTIDA EM CADA CASE.
+	{
+
+	case 1:
+		printf("Operação SOMA selecionada!\n");
+		
+		printf("\nInsira o primeiro valor da soma: ");
+		scanf_s("%i", &valor1);
+
+		printf("\n");
+
+		printf("Insira o segundo valor da soma: ");
+		scanf_s("%i", &valor2);
+
+		printf("\n");
+
+		resultado = valor1 + valor2;
+
+		printf("O Resultado da operação foi: %i\n\n", resultado);
+
+		break;
+
+	case 2:
+		printf("Operação SUBTRAÇÃO selecionada!\n");
+
+		printf("\nInsira o primeiro valor da sbtração: ");
+		scanf_s("%i", &valor1);
+
+		printf("\n");
+
+		printf("Insira o segundo valor da subtração: ");
+		scanf_s("%i", &valor2);
+
+		printf("\n");
+
+		resultado = valor1 - valor2;
+
+		printf("O Resultado da operação foi: %i\n\n", resultado);
+
+		break;
+
+	case 3:
+		printf("Operação DIVISÃO selecionada!\n");
+
+		printf("\nInsira o primeiro valor da divisão: ");
+		scanf_s("%i", &valor1);
+
+		printf("\n");
+
+		printf("Insira o segundo valor da divisão: ");
+		scanf_s("%i", &valor2);
+
+		printf("\n");
+
+		resultado1 = (float)valor1 / (float)valor2;
+
+		printf("O Resultado da operação foi: %.2f\n\n", resultado1);
+
+		break;
+
+	case 4:
+		printf("Operação MULTIPLICAÇÃO selecionada!\n");
+
+		printf("\nInsira o primeiro valor da multiplicação: ");
+		scanf_s("%i", &valor1);
+
+		printf("\n");
+
+		printf("Insira o segundo valor da multiplicação: ");
+		scanf_s("%i", &valor2);
+
+		printf("\n");
+
+		resultado = valor1 * valor2;
+
+		printf("O Resultado da operação foi: %i\n\n", resultado);
+
+		break;
+
+	case 5:
+		printf("==== PROGRAMA ENCERRADO! ====");
+		printf("\n\n");
+		return 0;
+
+	default:
+		break;
+	}
+
+	printf("Deseja realizar nova operação?");
+	printf("\n");
+
+	printf("1- SIM. \n");
+	printf("2- NÃO.\n");
+	scanf_s("%i", &opcao);
+
+	if (opcao == 1)
+	{
+		do
+		{
+			{
+				printf("==== Calculadora ====\n");
+				printf("\nEscolha a operação:\n");
+
+				printf("1- SOMA.\n");
+				printf("2- SUBTRAÇÃO.\n");		//MENU DE ESCOLHA DA OPERAÇÃO
+				printf("3- DIVISÃO.\n");
+				printf("4- MULTIPLICAÇÃO.\n");
+				printf("\n5- Encerrar.\n\n");
+
+				scanf_s("%i", &opcao);
+			}
+
+		} while (opcao < 1 || opcao > 5);	//LAÇO PARA FORÇAR O USUÁRIO A FICAR DENTRO DO MENU CASO DIGITE UM NÚMERO INVÁLIDO
+
+
+		switch (opcao)	//APÓS SELECIONADO A OPERAÇÃO O SWITCH CUIDARÁ DE REALIZAR AS INSTRUÇÕES CONTIDA EM CADA CASE.
+		{
+
+		case 1:
+			printf("Operação SOMA selecionada!\n");
+
+			printf("\nInsira o primeiro valor da soma: ");
+			scanf_s("%i", &valor1);
+
+			printf("\n");
+
+			printf("Insira o segundo valor da soma: ");
+			scanf_s("%i", &valor2);
+
+			printf("\n");
+
+			resultado = valor1 + valor2;
+
+			printf("O Resultado da operação foi: %i\n\n", resultado);
+
+			break;
+
+		case 2:
+			printf("Operação SUBTRAÇÃO selecionada!\n");
+
+			printf("\nInsira o primeiro valor da sbtração: ");
+			scanf_s("%i", &valor1);
+
+			printf("\n");
+
+			printf("Insira o segundo valor da subtração: ");
+			scanf_s("%i", &valor2);
+
+			printf("\n");
+
+			resultado = valor1 - valor2;
+
+			printf("O Resultado da operação foi: %i\n\n", resultado);
+
+			break;
+
+		case 3:
+			printf("Operação DIVISÃO selecionada!\n");
+
+			printf("\nInsira o primeiro valor da divisão: ");
+			scanf_s("%i", &valor1);
+
+			printf("\n");
+
+			printf("Insira o segundo valor da divisão: ");
+			scanf_s("%i", &valor2);
+
+			printf("\n");
+
+			resultado1 = (float)valor1 / (float)valor2;
+
+			printf("O Resultado da operação foi: %.2f\n\n", resultado1);
+
+			break;
+
+		case 4:
+			printf("Operação MULTIPLICAÇÃO selecionada!\n");
+
+			printf("\nInsira o primeiro valor da multiplicação: ");
+			scanf_s("%i", &valor1);
+
+			printf("\n");
+
+			printf("Insira o segundo valor da multiplicação: ");
+			scanf_s("%i", &valor2);
+
+			printf("\n");
+
+			resultado = valor1 * valor2;
+
+			printf("O Resultado da operação foi: %i\n\n", resultado);
+
+			break;
+
+		case 5:
+			printf("==== PROGRAMA ENCERRADO! ====");
+			printf("\n");
+			return 0;
+
+		default:
+			break;
+		}
+
+		printf("Deseja realizar nova operação?");
+		printf("\n");
+
+		printf("1- SIM. \n");
+		printf("2- NÃO.\n");
+		scanf_s("%i", &opcao);
+	}
+	else
+	{
+	printf("==== PROGRAMA ENCERRADO! ====");
+	printf("\n\n");
+	return 0;
+	}
+
+
+	return 0;
+}
