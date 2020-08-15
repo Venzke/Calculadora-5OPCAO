@@ -1,0 +1,2 @@
+# Calculadora-5OPCAO
+Neste algoritmo foi desenvolvido uma calculadora contendo 5 opções. Estas são (1)soma, (2)subtração, (3)divisão, (4)multiplicação e (5)encerrar. Este menu foi feito dentro de um laço DO WHILE que força o usuário a inserir um número válido. Após a seleção da operação será pedido 2 valores para realizar a conta. Feita a operação escolhida o programa válida o resultado e pergunta para o usuário se quer realizar uma nova operação onde terá que digitar 1 para sim e 2 para não.
